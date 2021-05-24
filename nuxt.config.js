@@ -1,4 +1,4 @@
-const axios = require('axios')
+import axios from '@nuxtjs/axios'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
