@@ -1,7 +1,14 @@
 <template>
   <main class="-mt-14">
     <section
-      class="flex flex-col lg:flex-row justify-center h-screen w-screen items-center"
+      class="
+        flex flex-col
+        lg:flex-row
+        justify-center
+        h-screen
+        w-screen
+        items-center
+      "
     >
       <div class="lg:block w-full lg:w-1/3 lg:h-full relative mb-8 lg:mb-0">
         <img
@@ -51,7 +58,17 @@
                 '1200x0'
               )} 1200w
             `"
-          class="hidden lg:block lg:rounded-none lg:absolute lg:inset-0 lg:w-full lg:h-full max-w-none object-cover"
+          class="
+            hidden
+            lg:block
+            lg:rounded-none
+            lg:absolute
+            lg:inset-0
+            lg:w-full
+            lg:h-full
+            max-w-none
+            object-cover
+          "
         />
       </div>
 

@@ -1,6 +1,7 @@
 const axios = require('axios')
 
 export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
@@ -15,7 +16,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: process.env.APP_DESCRIPTION || '',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -34,6 +35,11 @@ export default {
     { src: '~/plugins/storyblok-image-transform.js' },
     { src: '~/plugins/storyblok-rich-text-renderer.js' },
   ],
+
+  publicRuntimeConfig: {
+    storyblokAccessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+    storyblokCacheProvider: process.env.STORYBLOK_CACHE_PROVIDER,
+  },
 
   privateRuntimeConfig: {
     storyblokAccessToken: process.env.STORYBLOK_ACCESS_TOKEN,
@@ -94,7 +100,12 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://go.nuxtjs.dev/content
-    ['storyblok-nuxt'],
+    [
+      'storyblok-nuxt',
+      {
+        cacheProvider: 'memory',
+      },
+    ],
     ['@nuxtjs/markdownit', { html: true, injected: true }],
   ],
 
