@@ -148,7 +148,7 @@ export default {
   asyncData(context) {
     const editMode = EditModeState(context)
     const version = editMode ? 'draft' : 'published'
-    const path = context.route.path === '/' ? '/homepage' : context.route.path
+    const path = context.route.path === '/' ? 'homepage' : context.route.path
     // Load the JSON from the API
     return loadData({
       version,
@@ -171,7 +171,7 @@ export default {
     // Loading reference data - Work in our case
     if (context.store.state.work.loaded !== '1') {
       const version = editMode ? 'draft' : 'published'
-      const path = context.route.path === '/' ? '/' : context.route.path
+      const path = context.route.path === '/' ? '' : context.route.path
       const workRefRes = await loadData({
         version,
         api: context.app.$storyapi,

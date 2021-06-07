@@ -8,7 +8,15 @@
       :style="`--image-bg-color-code: ${item.content.image_bg_color_code}; --case-bg-color-code: ${item.content.case_bg_color_code};`"
     >
       <figure
-        class="work-case__image aspect-w-1 aspect-h-1 relative top-0 lg:top-1/2 lg:transform lg:-translate-y-2/4"
+        class="
+          work-case__image
+          aspect-w-1 aspect-h-1
+          relative
+          top-0
+          lg:top-1/2
+          lg:transform
+          lg:-translate-y-2/4
+        "
       >
         <img
           :sizes="`(min-width: 60em) ${viewportSizeDividedByStories}vw, 100vw`"
