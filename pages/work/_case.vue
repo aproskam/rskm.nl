@@ -2,7 +2,7 @@
   <article class="-mt-14">
     <div class="relative">
       <figure
-        class="aspect-w-16 aspect-h-5"
+        class="aspect-w-16 aspect-h-12 lg:aspect-h-5"
         :style="`background-color: ${story.content.image_bg_color_code}`"
       >
         <img
@@ -29,7 +29,7 @@
       </figure>
 
       <header
-        class="case__header absolute left-20 bottom-10"
+        class="case__header absolute left-4 lg:left-20 bottom-10"
         :style="`color: ${story.content.case_bg_color_code}`"
       >
         <h1>{{ story.name }}</h1>
@@ -37,16 +37,16 @@
       </header>
     </div>
 
-    <div class="w-2/4 mx-auto mt-8 style--nested-copy">
+    <div class="w-11/12 lg:w-2/4 mx-auto mt-8 style--nested-copy">
       <rich-text-renderer :document="story.content.intro"> </rich-text-renderer>
     </div>
 
-    <div class="w-2/4 mx-auto mt-8 style--nested-copy">
+    <div class="w-11/12 lg:w-2/4 mx-auto mt-8 style--nested-copy">
       <rich-text-renderer :document="story.content.content">
       </rich-text-renderer>
     </div>
 
-    <div v-if="story.content.video" class="w-2/4 mx-auto mt-8">
+    <div v-if="story.content.video" class="w-11/12 lg:w-2/4 mx-auto my-8">
       <video
         autoplay
         playsinline
