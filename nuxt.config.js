@@ -41,7 +41,11 @@ export default {
 
   // Using Links API (100 entries - no pagination in the example)
   generate: {
-    routes: ['/work/cakefilm-case', '/work/portfolio-website'],
+    routes: [
+      '/work/cakefilm-case',
+      '/work/portfolio-website',
+      '/work/crisp-sheets',
+    ],
   },
   // TODO: Make routes generation dynamic
 
