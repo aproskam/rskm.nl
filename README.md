@@ -1,6 +1,6 @@
 # rskm.nl
 
-My personal portfolio website build with NuxtJS.
+My personal portfolio website build with NuxtJS. Hosted and deployed with Vercel.
 
 ## Build Setup
 
