@@ -1,8 +1,8 @@
 {
 	"name": "rskm.nl",
-  "description": "ArnoPaul front-end developer living in Amsterdam",
-  "version": "2.0.0",
-  "private": true,
+	"description": "ArnoPaul front-end developer living in Amsterdam",
+	"version": "2.0.0",
+	"private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
+		"contentful": "^9.1.34",
 		"cookie": "^0.4.1"
 	}
 }
