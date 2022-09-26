@@ -1,9 +1,7 @@
 <script>
-  import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+  import NestedRichText from "./NestedRichText.svelte";
 
   export let fields;
-
-  const introText = documentToHtmlString(fields.introText);
 </script>
 
 <section>
@@ -11,7 +9,5 @@
     <img width="200" height="300" src={fields.introImage.fields.file.url} alt={fields.introImage.fields.title} />
   </div>
 
-  <div class="style--nested-copy">
-    {@html introText}
-  </div>
+  <NestedRichText richTextData={fields.introText} />
 </section>
