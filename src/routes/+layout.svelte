@@ -2,15 +2,17 @@
 	import Header from '$lib/header/Header.svelte';
   import Footer from '$lib/footer/Footer.svelte';
   import '../lib/css/fonts.css';
-  import '../lib/css/typography.css';
 	import '../app.css';
+  import '../lib/css/typography.css';
 </script>
 
-<Header />
+<div class="relative font-sans">
+  <Header />
+  
+  <main>
+    <slot />
+  </main>
 
-<main>
-	<slot />
-</main>
-
-<Footer />
+  <Footer />
+</div>  
 
