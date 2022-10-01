@@ -10,10 +10,10 @@
       </p>
     </li>
 
-    <li><a href="https://github.com/aproskam" target="_blank">Github</a></li>
+    <li><a href="https://github.com/aproskam" target="_blank" title="Github profile of ArnoPaul">Github</a></li>
 
     <li>
-      <a href="https://twitter.com/doedatnouniet" target="_blank">Twitter</a>
+      <a href="https://twitter.com/doedatnouniet" target="_blank" title="Follow ArnoPaul on twitter">Twitter</a>
     </li>
   </ul>
 </footer>
