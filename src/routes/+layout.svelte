@@ -9,7 +9,7 @@
 <div class="relative font-sans">
   <Header />
   
-  <main>
+  <main class="-mt-14">
     <slot />
   </main>
 
