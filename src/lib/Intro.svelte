@@ -23,14 +23,16 @@ items-center
       imageData={imageData} 
       transforms={['100x100', '400x400', '800x800', '1200x1200']} 
       imgLoading={'eager'}
-      customClass={"lg:hidden rounded-full max-w-none mx-auto object-cover"}
+      customClass={"lg:hidden rounded-full max-w-none mx-auto object-cover bg-[#fef3ea]"}
+      height={imageData.file.details.image.height};
+      width={imageData.file.details.image.width};
     />
 
     <ImaginePicture 
       imageData={imageData} 
       transforms={['100x0', '400x0', '800x0', '1200x0']} 
       imgLoading={'eager'}
-      customClass={"hidden lg:block lg:rounded-none lg:absolute lg:inset-0 lg:w-full lg:h-full max-w-none object-cover"}
+      customClass={"hidden lg:block lg:rounded-none lg:absolute lg:inset-0 lg:w-full lg:h-full max-w-none object-cover bg-[#fef3ea]"}
       height={imageData.file.details.image.height};
       width={imageData.file.details.image.width};
     />
