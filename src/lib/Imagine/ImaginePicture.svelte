@@ -35,7 +35,7 @@
       const linkGeneratorParams = sizeParameterGenerator(transform)
       imgSrcSetAvif = imgSrcSetAvif + `${linkGenerator(imgFile, `fm=avif${linkGeneratorParams.url}`)} ${linkGeneratorParams.tWidth}w${index + 1 === transforms.length ? '' : ', '}`;
       imgSrcSetWebp = imgSrcSetWebp + `${linkGenerator(imgFile, `fm=webp${linkGeneratorParams.url}`)} ${linkGeneratorParams.tWidth}w${index + 1 === transforms.length ? '' : ', '}`;
-      imgSrcSetJpg = imgSrcSetJpg + `${linkGenerator(imgFile, `fm=jpg&fl=progressive${linkGeneratorParams.url}`)} ${linkGeneratorParams.tWidth}w${index + 1 === transforms.length ? '' : ', '}`;
+      imgSrcSetJpg = imgSrcSetJpg + `${linkGenerator(imgFile, `fm=jpg&fl=progressive${linkGeneratorParams.url}`)} ${linkGeneratorParams.tWidth}w${index + 1 === transforms.length - 1 ? '' : ', '}`;
     });
   });
 </script>
