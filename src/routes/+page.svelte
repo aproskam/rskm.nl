@@ -3,8 +3,6 @@
   import WorkOverview from '$lib/work/WorkOverview.svelte';
 
 	export let data;
-
-  $: console.log("HP: ", data);
 </script>
 
 <svelte:head>

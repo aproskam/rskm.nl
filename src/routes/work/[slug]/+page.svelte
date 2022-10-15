@@ -3,7 +3,6 @@
   import NestedRichText from "$lib/NestedRichText.svelte";
 
 export let data;
-$: console.log("data", data);
 
 const caseData = data.workCaseData.fields;
 </script>
