@@ -5,5 +5,7 @@
 </script>
 
 {#each cases as work}
-  <WorkTeaser work={work.fields} />
+  <section>
+    <WorkTeaser work={work.fields} />
+  </section>
 {/each}

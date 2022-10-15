@@ -12,7 +12,6 @@
 	<meta name="description" content="" />
 </svelte:head>
 
-<section>
-  <Intro fields={data.fields} />
-  <WorkOverview cases={data.workData} />
-</section>
+
+<Intro fields={data.fields} />
+<WorkOverview cases={data.workData} />
