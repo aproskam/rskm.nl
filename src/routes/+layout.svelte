@@ -8,7 +8,7 @@
   import '../lib/css/typography.css';
 </script>
 
-<div class="relative font-sans">
+<div class="relative font-sans night-blue">
   {#if $navigating}
     <PreloadingIndicator />
   {/if}

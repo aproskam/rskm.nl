@@ -10,6 +10,9 @@ module.exports = {
       height: {
         'screen-2/4': '50vh',
       },
+      colors: {
+        'night-blue': '#212135',
+      },
     },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
