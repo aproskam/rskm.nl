@@ -36,11 +36,20 @@
   });
 </script>
 
+<style>
+  img {
+    aspect-ratio: var(--img-width) / var(--img-height);
+  }
+</style>
+
 <figure
   class={customClassFigure}
   style={customStyleFigure}
 >
   <img
+    {width}
+    {height}
+    style={`--img-width: ${width}; --img-height: ${height}`}
     sizes="(min-width: 60em) 33.33vw,100vw"
     src={imageData.file.url}
     alt={imageData.title}  
