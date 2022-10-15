@@ -1,20 +1,36 @@
-# rskm.nl
+## rskm.nl
 
-My personal portfolio website build with NuxtJS. Hosted and deployed with Vercel.
+My personal portfolio website build with 🏎 SvelteKit framework, the Content is managed via Contentful and the hosting and deployment is done via Vercel 🚀
 
-## Build Setup
+## Developing
+
+Install dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-# install dependencies
-$ yarn install
+npm run dev
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
+
+## Building
+
+To create a production version:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+## ToDo
+
+1. Implement multiple sustainable web optimisations
+   1. Replace as much as possible images with vectors
+   2. Change to energy efficient colours
+   3. Move to a Green Hosting party
+2. Replace the Contentful REST API integration with GraphQL variant
+3. Add TypeScript
+4. Add some small micro animations
+
+
