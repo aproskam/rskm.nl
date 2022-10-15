@@ -38,11 +38,10 @@ const caseData = data.workCaseData.fields;
     {#if caseData.video}
       <div class="w-11/12 lg:w-2/4 mx-auto my-8">
         <video
-          autoplay
-          playsinline
+          controls
           muted
           loop
-          src="story.content.video.filename"
+          src={caseData.video.fields.file.url}
         ></video>
       </div>
     {/if}
