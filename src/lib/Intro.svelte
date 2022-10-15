@@ -21,11 +21,11 @@ items-center
   <div class="lg:block w-full lg:w-1/3 lg:h-full relative mb-8 lg:mb-0">
     <ImaginePicture 
       imageData={imageData} 
-      transforms={['100x100', '400x400', '800x800', '1200x1200']} 
+      transforms={['10x10', '160x160', '320x320', '480x480']} 
       imgLoading={'eager'}
-      customClass={"lg:hidden rounded-full max-w-none mx-auto object-cover bg-[#fef3ea]"}
-      height={imageData.file.details.image.height};
-      width={imageData.file.details.image.width};
+      customClass={"lg:hidden rounded-full w-40 max-w-none mx-auto object-cover bg-[#fef3ea]"}
+      height={100}
+      width={100}
     />
 
     <ImaginePicture 
