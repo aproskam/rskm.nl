@@ -66,7 +66,7 @@
   <button 
     type="button"
     title="Read more"
-    class="work-case__button absolute bottom-8 right-4 rounded-full flex items-center pl-4"
+    class="work-case__button absolute bottom-8 right-4 lg:bottom-16 lg:right-16 rounded-full flex items-center pl-4"
   >
     <span class="mr-2 uppercase">Read more</span>
     <i class="button__icon">
