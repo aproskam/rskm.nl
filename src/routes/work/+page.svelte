@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>{data.fields.seoTitle}</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content={data.fields.seoDescription} />
 </svelte:head>
 
 <header class="w-screen absolute z-10 top-16 uppercase text-center">

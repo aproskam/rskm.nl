@@ -7,6 +7,11 @@ export let data;
 const caseData = data.workCaseData.fields;
 </script>
 
+<svelte:head>
+	<title>{caseData.seoTitle}</title>
+	<meta name="description" content={caseData.seoDescription} />
+</svelte:head>
+
 {#if data.status === 200}
   <article class="-mt-14">
     <div class="relative">

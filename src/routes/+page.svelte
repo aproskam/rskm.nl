@@ -7,9 +7,8 @@
 
 <svelte:head>
 	<title>{data.fields.seoTitle}</title>
-	<meta name="description" content="" />
+	<meta name="description" content={data.fields.seoDescription} />
 </svelte:head>
-
 
 <Intro fields={data.fields} />
 <WorkOverview cases={data.workData} />
