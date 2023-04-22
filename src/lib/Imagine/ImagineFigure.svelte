@@ -18,7 +18,7 @@
   let imgSrc = '';
 
   onMount(() => {
-    const imgFile = imageData.file.url;
+    const imgFile = `https:${imageData.file.url}`;
 
     transforms.forEach((transform, index) => {
       const transformValues = transform.split('x');
@@ -51,7 +51,7 @@
     {height}
     style={`--img-width: ${width}; --img-height: ${height}`}
     sizes="(min-width: 60em) 33.33vw,100vw"
-    src={imageData.file.url}
+    src={`https:${imageData.file.url}`}
     alt={imageData.title}  
     class={customClassImg}
   />
