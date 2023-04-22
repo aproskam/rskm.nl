@@ -24,8 +24,8 @@ items-center
       transforms={['10x10', '160x160', '320x320', '480x480']} 
       imgLoading={'eager'}
       customClass={"lg:hidden rounded-full w-40 max-w-none mx-auto object-cover bg-[#fef3ea]"}
-      height={100}
-      width={100}
+      height={'100'}
+      width={'100'}
     />
 
     <ImaginePicture 

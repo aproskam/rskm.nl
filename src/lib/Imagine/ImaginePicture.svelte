@@ -3,7 +3,9 @@
   import linkGenerator from './Imagine.helper'
 
   export let customClass;
-  export let imageData = {};
+  export let imageData = {
+    title: ''
+  };
   export let imgLoading = 'lazy';
   export let transforms = [];
   export let width = '100';
@@ -26,7 +28,7 @@
   };
 
   onMount(() => {
-    const imgFile = imageData.file.url;
+    const imgFile = `https:${imageData.file.url}`;
     const firstTransform = transforms.slice(0, 1);
     const srcLinkGeneratorParams = sizeParameterGenerator(firstTransform[0]);
     imgSrc = `${linkGenerator(imgFile, `fm=jpg&fl=progressive${srcLinkGeneratorParams.url}`)}`;
@@ -40,26 +42,30 @@
   });
 </script>
 
-<picture>
-  <source 
-    srcset={imgSrcSetAvif} 
-    type="image/avif"
-  >
-  <source 
-    srcset={imgSrcSetWebp} 
-    type="image/webp"
-  >
-  <source 
-    srcset={imgSrcSetJpg} 
-    type="image/jpg"
-  >
-  <img 
-    {width}
-    {height}
-    src={imgSrc}
-    alt={imageData.title}
-    loading={imgLoading}
-    class={customClass}
-  >
-</picture>
+{#if imgSrc}
+  <picture>
+    <source 
+      srcset={imgSrcSetAvif} 
+      type="image/avif"
+    >
+    <source 
+      srcset={imgSrcSetWebp} 
+      type="image/webp"
+    >
+    <source 
+      srcset={imgSrcSetJpg} 
+      type="image/jpg"
+    >
+    <img 
+      {width}
+      {height}
+      src={imgSrc}
+      alt={imageData.title}
+      loading={imgLoading}
+      class={customClass}
+    >
+  </picture>
+{:else}
+  <div class={`${customClass} h-40 lg:h-full` }></div>
+{/if}
 
